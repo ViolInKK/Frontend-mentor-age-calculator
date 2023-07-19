@@ -1,6 +1,140 @@
-#root {
-  max-width: 1280px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,800&display=swap');.App {
+  font-size: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;  
+}
+
+.flex-container{
+  display: flex;
+  padding-left: 3em;
+  padding-top: 3em;
+  flex-direction: column;
+  background-color: white;
+  width: 43em;
+  height: 33em;
+  border-radius: 20px 20px 0px 20px;
+  border-bottom-right-radius: 200px;
+}
+
+.input-container{
+  display: flex;
+  gap: 2em;
+  margin-top: 1em;
+}
+
+.error{
+  display: flex;
+  color: rgb(255, 96, 96);
+  font-size: 1rem;
+  transform: translateY(10px);
+}
+
+.input-container input{
+  width: 3.5em;
+  font-size: 2.3rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  font: "Poppins";
+  font-family: "Poppins";
+  color: black;
+  margin-top: 0.2em;
+}
+
+::placeholder{
+  color: #888888;
+}
+
+.day-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.day-container span{
+  font-size: 0.9rem;
+  letter-spacing: .3rem;
+  color: #707070;
+}
+
+.month-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.month-container span{
+  font-size: 0.9rem;
+  letter-spacing: .3rem;
+  color: #707070;
+  font-weight: 800;
+}
+
+.year-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.year-container span{
+  font-size: 0.9rem;
+  letter-spacing: .3rem;
+  color: #707070;
+  font-weight: 800;
+}
+
+.arrow-container{
+  display: flex;
+  margin-top: 3em;
+}
+
+.circle{
+  background-color: #844dff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  transform: translateY(-50px);
+}
+
+.arrow{
+  transform: translateY(30px);
+}
+
+.result-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 7rem;
+  transform: translateY(-70px);
+  font-style: italic
+}
+
+.result-container p{
+  margin-top: -25px;
+  margin-bottom: -25px;
+  letter-spacing: -0.1rem;
+  user-select: none;
+}
+
+.result-container span{
+  color: #844dff;
+  letter-spacing: 0.3rem;
+
+}
+
+.line{
+  background-color: black;
+  width: 700px;
+  height: 2px;
+  background-color: #ededed;
 }
